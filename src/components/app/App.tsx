@@ -1,24 +1,16 @@
-import * as React from 'react';
-import {
-    BrowserRouter as Router,
-    Route,
-} from "react-router-dom";
-
-import {Header} from '../header/header';
+import React from 'react';
+import {Header} from "../header/header";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.scss';
 
 const App: React.FC = () => {
 
-  return (
-    <Router>
-
-        <Route>
+    return (
+        <Router>
             <Header/>
-        </Route>
+        </Router>
+    );
 
-    </Router>
-  );
-
-}
+};
 
 export {App};
